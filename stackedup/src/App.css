@@ -1,18 +1,14 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  max-width: 100%;
+  margin: 0;
+  font-family: Power Grotesque, sans-serif;
   color: black;
   background-color: white;
 }
 
-
- body {
-  margin: 0;
+.App {
   display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
