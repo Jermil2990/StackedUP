@@ -5,9 +5,9 @@ import headerImage from './assets/cta.png';
 const Header = () => {
     return (
         <>
-            <header className="image-header">
-                <img src={headerImage} alt="StackedUp Image" className="header-background" />
-                <div className="logo-container">
+            <header className="header-class">
+                <img src={headerImage} className="image-header"/>
+                <div className="logo">
                     <h2>StackedUP</h2>
                 </div>
             </header>
