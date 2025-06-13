@@ -47,7 +47,7 @@
   max-width: 100%;
   background-image: url('./assets/paper-texture.jpg');
 }
-
+/*
 .section-title{
   text-align: center;
   font-family: powerGrotesk;
@@ -61,4 +61,22 @@
  font-family: powerGrotesk;
  font-size: 35px;
  margin-top: 0;
+}
+*/
+.section-title {
+  text-align: center;
+  font-family: powerGrotesk;
+  font-size: 70px;
+  /* We've changed the padding here */
+  padding: 20px 20px 0 20px; /* This removes the bottom padding */
+  margin-bottom: 0; /* Explicitly set the bottom margin to 0 */
+  background: linear-gradient(45deg, #ffcf49, #97dfcf); /* Corrected CSS property */
+}
+
+.section-subtitle {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  font-family: powerGrotesk;
+  font-size: 35px;
+  margin-top: 5px; /* Reduces the space from the top. Adjust this value as needed. */
 }

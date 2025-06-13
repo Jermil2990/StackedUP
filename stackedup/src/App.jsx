@@ -98,7 +98,7 @@ const App = () => {
       <div className="texture-overlay"></div>
       <Header />
       <h2 className="section-title">Tech Opprotunities</h2>
-      <h3 className="section-subtitle">University Students</h3>
+      <h3 className="section-subtitle">- University Students -</h3>
       <div className="card-grid">
         {opportunitiesData.map((card, index) => (
           // Renamed the component here from OpportunityCard to Card

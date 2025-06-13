@@ -27,5 +27,5 @@
     position: absolute;
     color: white; /* Example text color */
     width: 80%; /* Adjust width as needed */
-    max-width: 1200px; 
+    max-width: 100%; 
 }

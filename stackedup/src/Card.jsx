@@ -18,7 +18,7 @@ const Card = ({
           <img src={logo} alt={`${companyName} Logo`} className="company-logo" />
           <span>{companyName}</span>
         </div>
-        <a href={websiteUrl} target="_blank" rel="noopener noreferrer" className="cta-button">
+        <a href={websiteUrl} target="_blank" rel="websitelink" className="cta-button">
         GO
         </a>
       </header>
@@ -26,7 +26,7 @@ const Card = ({
       <main className="card-body">
         <div className="program-image-container">
           <img src={programImage} alt={programTitle} className="program-image" />
-          <div className="program-image-text">Photo Program (AI)</div>
+          <div className="program-image-text"><span class="material-symbols-outlined">heart_plus</span></div>
         </div>
         <div className="program-details">
           <h3>{programTitle}</h3>

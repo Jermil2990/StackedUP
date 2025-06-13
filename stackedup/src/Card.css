@@ -148,7 +148,7 @@ SECTION: INDIVIDUAL CARD STYLING
 .program-image-text {
   background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(5px);
-  border-radius: 0 var(--border-radius) 0 0;
+  border-radius: var(--border-radius) var(--border-radius) var(--border-radius) var(--border-radius);
   bottom: 0;
   color: white;
   font-size: 0.85rem;
