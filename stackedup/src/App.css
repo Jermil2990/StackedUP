@@ -19,6 +19,7 @@
 }
 
 .App {
+  background-image: url('./assets/paper-texture.jpg');
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,9 +29,13 @@
 .section-title{
   font-family: powerGrotesk;
   font-size: 70px;
+  padding: 2px;
+  background-color: #16A789;
+  border-color: black;
 }
 
 .section-subtitle{
  font-family: powerGrotesk;
  font-size: 25px;
+ margin-top: 0;
 }
