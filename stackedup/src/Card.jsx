@@ -7,7 +7,8 @@ const Card = ({
   companyName,
   programTitle,
   programDescription,
-  programImage
+  programImage,
+  websiteUrl,
 }) => {
   return (
     // Updated the main className for clarity
@@ -17,9 +18,9 @@ const Card = ({
           <img src={logo} alt={`${companyName} Logo`} className="company-logo" />
           <span>{companyName}</span>
         </div>
-        <div className="cta-button">
-          <span>Button</span> 
-        </div>
+        <a href={websiteUrl} target="_blank" rel="noopener noreferrer" className="cta-button">
+        GO
+        </a>
       </header>
 
       <main className="card-body">

@@ -18,7 +18,33 @@
   background-color: white;
 }
 
+.texture-overlay {
+  /* Position it to cover the entire viewport */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw; /* 100% of the viewport width */
+  height: 100vh; /* 100% of the viewport height */
+
+  /* The magic: apply the texture image */
+  background-image: url('https://www.transparenttextures.com/patterns/clean-gray-paper.png');
+  
+  /* Make it semi-transparent so you can see the content underneath */
+  opacity: 0.3; /* Adjust between 0.0 and 1.0 to your liking */
+
+  /* Place it on top of all other content */
+  z-index: 9999;
+
+  /*
+    CRUCIAL: This makes clicks "pass through" the overlay
+    to the buttons and links underneath.
+  */
+  pointer-events: none;
+}
+
 .App {
+  margin: 0;
+  max-width: 100%;
   background-image: url('./assets/paper-texture.jpg');
 }
 
@@ -27,13 +53,12 @@
   font-family: powerGrotesk;
   font-size: 70px;
   padding: 20px;
-  background-color: #4ca590;
-  border-color: black;
+  background-color: linear-gradient(45deg, #4ca590, #377c6c);
 }
 
 .section-subtitle{
  text-align: center;
  font-family: powerGrotesk;
- font-size: 25px;
+ font-size: 35px;
  margin-top: 0;
 }

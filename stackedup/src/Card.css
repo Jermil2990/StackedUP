@@ -1,12 +1,17 @@
 /* --- Google Fonts --- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
+@font-face {
+  font-family: powerGrotesk;
+  src: url(./assets/POWERGROTESK-REGULAR.TTF);
+}
+
 /* --- CSS Variables --- */
 :root {
   --card-bg-color: #ffffff;
   --card-shadow-color: rgba(0, 0, 0, 0.08);
   --card-hover-shadow-color: rgba(0, 0, 0, 0.15);
-  --primary-accent-color: #6c63ff;
+  --primary-accent-color: #16A789;
   --secondary-accent-color: #48cae4;
   --text-primary-color: #2c3e50;
   --text-secondary-color: #7a7a7a;
@@ -27,18 +32,12 @@ This section now uses CSS Grid, which is more robust for this task.
 ===================================================================
 */
 .card-grid {
-  display: grid; /* Use Grid instead of Flexbox */
-  /* This is the magic line.
-    - `repeat()`: Creates repeating columns.
-    - `auto-fit`: Fits as many columns as possible on one line.
-    - `minmax(320px, 1fr)`: Each column will be a minimum of 320px wide. 
-      If there's extra space, it will be distributed evenly (1fr).
-      This handles responsiveness AUTOMATICALLY.
-  */
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+   display: grid;
+  /* This line is changed to create 3 equal columns */
+  grid-template-columns: repeat(3, 1fr); 
   
-  gap: 2rem; /* The space between grid items */
-  padding: 2rem;
+  gap: 2rem; /* The space between cards (rows and columns) */
+  padding: 2rem; /* Space around the entire grid */
   width: 100%;
 }
 
@@ -102,7 +101,7 @@ SECTION: INDIVIDUAL CARD STYLING
   font-weight: 600;
 }
 
-.cta-button span {
+.cta-button {
   background-image: linear-gradient(45deg, var(--primary-accent-color), var(--secondary-accent-color));
   border: none;
   border-radius: 50px;
@@ -113,9 +112,11 @@ SECTION: INDIVIDUAL CARD STYLING
   padding: 0.7rem 1.4rem;
   transition: all var(--transition-duration) ease;
   background-size: 200%;
+  display: inline-block; 
+  text-decoration: none; 
 }
 
-.cta-button span:hover {
+.cta-button:hover {
   background-position: right;
   transform: scale(1.05);
 }
