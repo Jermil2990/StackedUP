@@ -44,7 +44,8 @@ GIF created with ...
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+- [ ] Figuring out how to connect image to the text and place it on top ;p
+- [ ] Finding a creative way to organize layout to match theme I had in mind
 
 ## License
 
