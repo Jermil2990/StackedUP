@@ -1,0 +1,183 @@
+/* --- Google Fonts --- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* --- CSS Variables --- */
+:root {
+  --card-bg-color: #ffffff;
+  --card-shadow-color: rgba(0, 0, 0, 0.08);
+  --card-hover-shadow-color: rgba(0, 0, 0, 0.15);
+  --primary-accent-color: #6c63ff;
+  --secondary-accent-color: #48cae4;
+  --text-primary-color: #2c3e50;
+  --text-secondary-color: #7a7a7a;
+  --font-family: 'Poppins', sans-serif;
+  --border-radius: 16px;
+  --transition-duration: 0.4s;
+}
+
+/* --- Universal Box Sizing --- */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/*
+===================================================================
+SECTION: CARD GRID LAYOUT (THE FIX)
+This section now uses CSS Grid, which is more robust for this task.
+===================================================================
+*/
+.card-grid {
+  display: grid; /* Use Grid instead of Flexbox */
+  /* This is the magic line.
+    - `repeat()`: Creates repeating columns.
+    - `auto-fit`: Fits as many columns as possible on one line.
+    - `minmax(320px, 1fr)`: Each column will be a minimum of 320px wide. 
+      If there's extra space, it will be distributed evenly (1fr).
+      This handles responsiveness AUTOMATICALLY.
+  */
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  
+  gap: 2rem; /* The space between grid items */
+  padding: 2rem;
+  width: 100%;
+}
+
+/*
+===================================================================
+SECTION: INDIVIDUAL CARD STYLING
+===================================================================
+*/
+.custom-card {
+  background: var(--card-bg-color);
+  width: 35rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 5px 20px var(--card-shadow-color);
+  color: var(--text-primary-color);
+  display: flex; /* We still use flexbox here, but for the card's internal layout */
+  flex-direction: column;
+  font-family: var(--font-family);
+  overflow: hidden;
+  transition: transform var(--transition-duration) ease, box-shadow var(--transition-duration) ease;
+
+  /*
+    NO MORE `flex: 1 1 300px` or `width: calc(...)` needed here.
+    The grid container now handles all the sizing and wrapping.
+    This makes the card component much simpler.
+  */
+}
+
+
+/* --- Interactive Hover Effect --- */
+.custom-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px var(--card-hover-shadow-color);
+}
+
+/* --- Card Header --- */
+.card-header {
+  align-items: center;
+  border-bottom: 1px solid #f0f0f0;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.25rem 1.5rem;
+}
+
+.company-info {
+  align-items: center;
+  display: flex;
+}
+
+.company-logo {
+  border: 2px solid #f0f0f0;
+  border-radius: 50%;
+  height: 45px;
+  margin-right: 1rem;
+  object-fit: contain;
+  width: 45px;
+}
+
+.company-info span {
+  color: var(--text-primary-color);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.cta-button span {
+  background-image: linear-gradient(45deg, var(--primary-accent-color), var(--secondary-accent-color));
+  border: none;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 500;
+  padding: 0.7rem 1.4rem;
+  transition: all var(--transition-duration) ease;
+  background-size: 200%;
+}
+
+.cta-button span:hover {
+  background-position: right;
+  transform: scale(1.05);
+}
+
+/* --- Card Body --- */
+.card-body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; 
+}
+
+.program-image-container {
+  position: relative;
+  height: 220px;
+}
+
+.program-image {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+  transition: transform var(--transition-duration) ease;
+}
+
+.custom-card:hover .program-image {
+  transform: scale(1.05);
+}
+
+.program-image-text {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(5px);
+  border-radius: 0 var(--border-radius) 0 0;
+  bottom: 0;
+  color: white;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  position: absolute;
+  right: 0;
+}
+
+.program-details {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.program-details h3 {
+  color: var(--primary-accent-color);
+  font-size: 1.4rem;
+  font-weight: 700;
+  margin: 0 0 0.75rem;
+}
+
+.program-details p {
+  color: var(--text-secondary-color);
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0 0 1rem 0;
+  flex-grow: 1;
+}
+
+/* No media queries needed for the main layout anymore!
+   CSS Grid's `auto-fit` and `minmax` handles going from 3 -> 2 -> 1 column automatically. */

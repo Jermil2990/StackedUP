@@ -20,21 +20,19 @@
 
 .App {
   background-image: url('./assets/paper-texture.jpg');
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .section-title{
+  text-align: center;
   font-family: powerGrotesk;
   font-size: 70px;
-  padding: 2px;
-  background-color: #16A789;
+  padding: 20px;
+  background-color: #4ca590;
   border-color: black;
 }
 
 .section-subtitle{
+ text-align: center;
  font-family: powerGrotesk;
  font-size: 25px;
  margin-top: 0;
