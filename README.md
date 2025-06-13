@@ -35,8 +35,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented required features:
 
-<img src='https://github.com/Jermil2990/StackedUP/blob/main/stackedup/src/assets/StackedUPGifVideo.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
-![A demo of StackedUP](https://github.com/Jermil2990/StackedUP/blob/main/stackedup/src/assets/StackedUPGifVideo.gif)
+<img src='https://github.com/Jermil2990/StackedUP/blob/main/stackedup/src/assets/StackedUPGifVideo.gif' title='Video Walkthrough' width='1000' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
 GIF created with ...Imgur 
