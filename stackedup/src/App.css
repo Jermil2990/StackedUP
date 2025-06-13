@@ -70,7 +70,7 @@
   /* We've changed the padding here */
   padding: 20px 20px 0 20px; /* This removes the bottom padding */
   margin-bottom: 0; /* Explicitly set the bottom margin to 0 */
-  background: linear-gradient(45deg, #ffcf49, #97dfcf); /* Corrected CSS property */
+  background: linear-gradient(45deg, #fce094, #97dfcf); /* Corrected CSS property */
 }
 
 .section-subtitle {

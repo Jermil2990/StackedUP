@@ -74,7 +74,7 @@ const opportunitiesData = [
     websiteUrl: 'https://www.uber.com/us/en/careers/uberstar/'
   },
   {
-    logo: 'https://upload.wikimedia.org/wikipedia/commons/a/a0/Lyft_logo.svg',
+    logo: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkxZjMCjO7A2uohMjntXZG8R-xvjOCFlHHjw&s',
     companyName: 'Lyft',
     programTitle: 'Early Talent Internships',
     programDescription: 'Lyft offers internships for students to gain real-world experience. Their programs emphasize mentorship and allow interns to contribute to projects that directly impact the Lyft community and platform.',
