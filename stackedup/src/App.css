@@ -1,3 +1,15 @@
+/* Custom Fonts */
+@font-face {
+  font-family: powerGrotesk;
+  src: url(./assets/POWERGROTESK-REGULAR.TTF);
+}
+
+@font-face {
+  font-family: powerGrotesk;
+  src: url(./assets/POWERGROTESK-REGULAR.TTF);
+}
+
+
 #root {
   max-width: 100%;
   margin: 0;
@@ -11,4 +23,14 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+.section-title{
+  font-family: powerGrotesk;
+  font-size: 70px;
+}
+
+.section-subtitle{
+ font-family: powerGrotesk;
+ font-size: 25px;
 }

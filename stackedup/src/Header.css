@@ -1,0 +1,31 @@
+@font-face {
+    font-family: Dimitri;
+    src: url(./assets/DIMITRI.TTF);
+}
+
+.header-class{
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+
+}
+
+.image-header{
+    height: 100%;
+    display: block;
+
+
+}
+
+.logo{
+    font-family: Dimitri;
+    font-size: 50px;
+    position: absolute;
+    color: white; /* Example text color */
+    width: 80%; /* Adjust width as needed */
+    max-width: 1200px; 
+}
