@@ -6,9 +6,8 @@ This web app: **StackedUP**
 
 Time spent: **67** hours spent in total
 
-## Required Features
+## Features
 
-The following **required** functionality is completed:
 
 - [ ] **The app has a cohesive, unique theme for events or resources relevant to a specific community**
 - [ ] Header/title describing the theme is displayed
@@ -18,7 +17,7 @@ The following **required** functionality is completed:
 - [ ] Each card should include some information about the event or resource
 
 
-The following **optional** features are implemented:
+The following features are implemented:
 
 - [ ] Buttons or links to a related resources are on each card component
 - [ ] All cards have buttons or links in addition to text
